@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color--: #023b6d;
+    --secondary-color--: #0d6efd;
+    --colo--: #cfd4e4;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--colo--);
+}
+p{
+    font-size: 1.2rem;
+}
+h1,h2,h3{
+    font-family: 'Poplins', sans-serif;
+    color: var(--primary-color--);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.5em;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--colo--);
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1180px;
+    padding-inline: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* navbar */
+nav{
+    width: 100%;
+    background-color: var(--primary-color--);
+    padding: 15px;
+    position: fixed;
+}
+.nav-section{
+    justify-content: space-between;
+}
+.logo img{
+    width: 200px;
+}
+.nav-toggle{
+    display: none;
+    font-size: 20px;
+    gap: 20px;
+}
+.icon{
+    margin-right: 5px;
+}
+.list-section ul li{
+    padding-left: 50px;
+}
+li input{
+    width: 250px;
+    height: 30px;
+    background-color: var(--primary-color--);
+    border: 1px solid var(--colo--);
+    padding: 10px;
+}
+.header-section{
+    text-align: center;
+    padding: 100px 150px;
+}
+.header-section p{
+    color: var(--primary-color--);
+    padding-top: 20px;
+}
+
+/* middle section */
+.card{
+    border: 1px solid var(--colo--);
+    border-radius: 10px;
+    gap: 30px;
+    margin-block: 50px;
+}
+.card-image img{
+    width: 400px;
+    border-radius: 10px 0px 0px 10px ;
+}
+.card-text p{
+    padding-block: 20px;
+    color: black;
+}
+.button{
+    color: var(--primary-color--);
+    padding: 15px 30px;
+    border: 1px solid var(--colo--);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.button:hover{
+    border-color: var(--secondary-color--);
+    transition: 0.5s;
+    color: var(--secondary-color--);
+}
+.card:hover{
+    box-shadow: 0 4px 20px 0 rgba(2, 59, 109, 0.3);
+    transition: 0.5s;
+}
+footer{
+    background-color: #023b6d;
+}
+.footer-section{
+    padding: 50px ;
+    gap: 50px;
+    justify-content: space-evenly ;
+    align-items: flex-start;
+}
+.column li{
+    padding-block: 10px;
+}
+.column h4,p {
+    font-size: 0.9rem;
+    color: white;
+    padding-bottom: 10px;
+}
+.footer-logo{
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.middle-section{
+    flex-direction: column;
+}
